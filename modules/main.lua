@@ -24,6 +24,10 @@ function M.match_loop(context, dispatcher, tick, state, messages)
   return state
 end
 
+function M.match_signal(context, dispatcher, tick, state, data)
+  return state, data
+end
+
 function M.match_terminate(context, dispatcher, tick, state, grace_seconds)
   return state
 end
